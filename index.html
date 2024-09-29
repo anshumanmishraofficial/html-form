@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My survey form</title>
+</head>
+<body>
+    <section class="top">
+        <h1 id="title">Demo Survey Form</h1>
+        <p id="description">This is a demo survey form to test my form knowledge.</p>
+    </section>
+    <section>
+        <form id="survey-form" action="" method="post">
+            <fieldset>
+                <label for="name" id="name-label">Name: <input type="text" name="name" id="name" placeholder="your name" required></label>
+                <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="your email" required></label>
+                <label for="age" id="number-label">Age: <input type="number" name="age" id="age" min="14" max="120" placeholder="between 14-120" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Who want the vehicle?</legend>
+                <label for="me">Me <input type="radio" name="vehicle-owner" id="me" checked></label>
+                <label for="family-member">Family member <input type="radio" name="vehicle-owner" id="family-member"></label>
+                <label for="someone-else">Someone else <input type="radio" name="vehicle-owner" id="someone-else"></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">What do you prefer more: <select name="drop-menu" id="dropdown">
+                    <option value="pholder">choose one</option>
+                    <option value="car">Car</option>
+                    <option value="bike">Bike</option>
+                </select></label>
+                <p class="checker">Choose that describe you.</p>
+                <label for="professional">Professional <input type="checkbox" name="pro" id="professional"></label>
+                <label for="casual">Casual <input type="checkbox" value="casual" id="casual"></label>
+                <label for="die-hard">Die-hard <input type="checkbox" value="hardc" id="die-hard"></label>
+                <label for="classy">Classy <input type="checkbox" value="classy" id="classy"></label>
+                <label for="more">Tell us more <textarea name="more" id="more"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
+</body>
+</html>
